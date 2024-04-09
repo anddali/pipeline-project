@@ -1,0 +1,6 @@
+projectKey=pipeline-project
+serverUrl=http://localhost:9000
+serverVersion=10.4.1.88267
+dashboardUrl=http://localhost:9000/dashboard?id=pipeline-project
+ceTaskId=fc329491-85b2-4e00-a9ae-f888c66e009c
+ceTaskUrl=http://localhost:9000/api/ce/task?id=fc329491-85b2-4e00-a9ae-f888c66e009c
