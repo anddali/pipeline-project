@@ -3,6 +3,16 @@
   become: true
 
   tasks:
+    - name: copy jar to all instances
+      copy:
+        src: /opt/docker/tracker-0.0.1-SNAPSHOT.jar
+        dest: /opt/docker/tracker-0.0.1-SNAPSHOT.jar
+
+    - name: copy Dockerfile
+      copy:
+        src: /opt/docker/Dockerfile
+        dest: /opt/docker/Dockerfile
+
     - name: stop current container
       command: docker stop trackerapp
       ignore_errors: yes
