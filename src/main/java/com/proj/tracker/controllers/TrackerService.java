@@ -85,7 +85,7 @@ public class TrackerService {
     @GetMapping("/info")
     public String getVersion() {
 
-        return "app working! updated ansi to auto deploy!! trying out multiple hosts!!!!? scanner testaaa!!?!";
+        return "app working! updated ansi to auto deploy!! trying out multiple h1osts!!!!? scanner testaaa!!?!";
     }
 
 }
