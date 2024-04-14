@@ -9,6 +9,7 @@ public class TrackerApplicationTests {
 
     @Test
     public void contextLoads() {
+        // This test will fail if the application context cannot be loaded
     }
 
 }

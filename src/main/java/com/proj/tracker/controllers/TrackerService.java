@@ -39,6 +39,8 @@ public class TrackerService {
 
     private IExerciseHistoryService IExerciseHistoryService;
 
+    private final String testMessage = "This is a test message";
+
     public TrackerService(IExerciseHistoryService IExerciseHistoryService) {
         this.IExerciseHistoryService = IExerciseHistoryService;
     }
@@ -85,7 +87,7 @@ public class TrackerService {
     @GetMapping("/info")
     public String getVersion() {
 
-        return "sonar + app working! updated ansi to auto deploy!! trying out multiple h1osts!!!!? scanner testaaa!!?!";
+        return testMessage;
     }
 
 }
