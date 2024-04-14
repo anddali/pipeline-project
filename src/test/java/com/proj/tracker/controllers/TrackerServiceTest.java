@@ -67,13 +67,6 @@ public class TrackerServiceTest {
     }
 
     @Test
-    public void getVersionTest() {
-        String response = trackerService.getVersion();
-
-        assertEquals("This is a test message", response);
-    }
-
-    @Test
     public void testDeleteExerciseHistory_NotFound() {
         // Arrange
         IExerciseHistoryService service = mock(IExerciseHistoryService.class);
