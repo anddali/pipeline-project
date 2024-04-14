@@ -1,0 +1,24 @@
+---
+- hosts: all
+  become: true
+
+  tasks:
+    - name: stop current container
+      command: docker stop trackerapp
+      ignore_errors: yes
+
+    - name: remove stopped container
+      command: docker rm trackerapp
+      ignore_errors: yes
+
+    - name: remove docker image
+      command: docker rmi tracker-image
+      ignore_errors: yes
+
+    - name: build docker image
+      command: docker build -t tracker-image .
+      args:
+        chdir: /opt/docker
+
+    - name: create container
+      command: docker run -d --name trackerapp -p 8080:8080 tracker-image
