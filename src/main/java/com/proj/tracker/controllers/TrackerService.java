@@ -39,7 +39,7 @@ public class TrackerService {
 
     private IExerciseHistoryService IExerciseHistoryService;
 
-    private final String testMessage = "This is a test message. Updated.";
+    private final String testMessage = "This is a test message.";
 
     public TrackerService(IExerciseHistoryService IExerciseHistoryService) {
         this.IExerciseHistoryService = IExerciseHistoryService;
